@@ -1,0 +1,10 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ **/
+/*Admin Backend*/
+.navbar-default { background-color: #elffde; border-color: #0a6600; }
+/*#toolbar { background: #0c7500; }*/
+.navbar-static-top { border-width: 0 0 3px; }
+.container > .navbar-header { margin-right: 32px; }
+.navbar-nav > li > a { padding-top: 25px; padding-bottom: 25px; }
