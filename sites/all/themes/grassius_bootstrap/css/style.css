@@ -8,3 +8,49 @@
 .navbar-static-top { border-width: 0 0 3px; }
 .container > .navbar-header { margin-right: 32px; }
 .navbar-nav > li > a { padding-top: 25px; padding-bottom: 25px; }
+/*Modify color navbar selected*/
+/*.navbar-default .navbar-nav > li > a { background-color: #9dce96;  }*/
+/*Overlay down margin settings drupal*/
+#overlay { margin: 89px auto; }
+/*#toolbar { z-index: 9999; }*/
+/*html.js body { padding: 85px 0; }*/
+#overlay-titlebar { z-index: 9999;  }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 19.33%;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-color: #ebeceb;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 2px;
+  /*box-shadow: 2px 3px 4px #888;*/
+  width: 117px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  column-count: 5;
+  column-gap: 40px;
+}
+#grid {
+  display: grid;
+  height: 188px;
+  width: 80px; 
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 171px;
+  column-gap: 90px;
+}
+
+#grid > div {
+  background-color: #fff;
+}
+.navbar-static-top{ z-index: 500; }
