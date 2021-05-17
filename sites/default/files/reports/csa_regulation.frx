@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE root [
+<!ENTITY nbsp "&#160;">
+]>
+<html xmlns:frx="urn:FrxReports">
+<head>
+<title>Regulation</title>
+<frx:category>CamBase</frx:category>
+<frx:options input_format="full_html"/>
+<frx:parameters>
+  <frx:parm id="family"/>
+  <frx:parm id="accession"/>
+</frx:parameters>
+<frx:docgen>
+</frx:docgen>
+<frx:fields>
+</frx:fields>
+<frx:menu/>
+<frx:cache/>
+<style/>
+</head>
+<body><p>Enter a <em>Camelina</em> gene accession to go directly to a gene information page, or find a group of genes belonging to a transcription factor family. The number in parenthesis indicates the size of the family. A results table can be downloaded by using the CSV link to the right.</p>
+
+<div class="FrxTable" frx:block="cambase/csa_tffam" id="csa_tffam_block">
+<table>
+	<thead>
+		<tr>
+			<th>Accession</th>
+			<th>TF or CoR Family</th>
+			<th>Type (TF or CoR)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr frx:foreach="*" id="csa_tffam">
+			<td>{accession}</td>
+			<td>{family}</td>
+			<td>{type}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</body>
+</html>

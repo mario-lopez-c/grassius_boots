@@ -219,7 +219,7 @@ function tripal_chado_views_views_data() {
       // get the table description
       $table_desc = chado_get_schema($base_table);
 
-      $fields = $table_desc['fields'];
+      $fields = $table_desc['fields'] ?? 'default value';
       if (!is_array($fields)) {
         $fields = [];
       }

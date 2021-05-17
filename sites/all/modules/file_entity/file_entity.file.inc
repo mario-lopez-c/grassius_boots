@@ -245,7 +245,10 @@ function file_entity_set_title_alt_properties_on_file_fields($entities, $entity_
     foreach (field_info_instances($entity_type, $bundle) as $instance) {
       if (!empty($entity->{$instance['field_name']})) {
         foreach ($entity->{$instance['field_name']} as &$items) {
-          foreach ($items as &$item) {
+		if (!is_array($items)) {
+			continue;
+		}
+	foreach ($items as &$item) {
             // We need to detect any field items that passed through
             // file_field_load(), whether they are files, images, or something
             // else. There is no direct way to do that, but checking for a few
