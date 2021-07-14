@@ -1,0 +1,2 @@
+id_name_v3	id_name_v4	synonym
+GRMZM2G026833	Zm00001d044785	GLK1

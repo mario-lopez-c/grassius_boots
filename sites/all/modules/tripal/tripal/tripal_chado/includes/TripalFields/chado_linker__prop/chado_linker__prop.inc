@@ -82,7 +82,9 @@ class chado_linker__prop extends ChadoField {
 
     // Get the FK that links to the base record.
     $schema = chado_get_schema($field_table);
-    $pkey = $schema['primary key'][0];
+    //Modify by Mario Lopez
+    $pkey = isset($schema['primary keys'][0]) ? $schema['primary keys'][0] : 'default';
+    //$pkey = $schema['primary key'][0];
     if (!isset($schema['foreign keys'][$base_table]['columns'])) {
       return;
     }

@@ -1,0 +1,3 @@
+id_name	family
+LOC_Os04g28090	MYB
+LOC_Os04g13480	Orphans

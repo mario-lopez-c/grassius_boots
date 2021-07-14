@@ -1,0 +1,2 @@
+genename	familyname
+GRMZM2G026833	G2-like

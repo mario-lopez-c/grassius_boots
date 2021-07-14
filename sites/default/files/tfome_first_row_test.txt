@@ -1,0 +1,2 @@
+transcript	clone_name	insert_genbank_id	template_genbank_id	vector
+TO1	pUT6548	KJ728271	gDNA	pENTR/SD/D-TOPO

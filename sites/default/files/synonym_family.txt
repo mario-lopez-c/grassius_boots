@@ -1,0 +1,2 @@
+id_name	family
+LOC_Os04g28090	MYB

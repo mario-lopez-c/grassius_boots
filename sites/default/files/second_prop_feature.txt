@@ -1,0 +1,3 @@
+id_name	family
+M4R10	CoReg
+
